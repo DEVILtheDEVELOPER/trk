@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>trk</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button onclick="showBirthdayMessage()">Click me</button>
+  
+  <div id="birthdayMessage">
+    <h1>Happy Birthday TARIK Vhiii !</h1>
+    <img src="friendPhoto.jpg" height="350" width="350" alt="Birthday Celebrations">
+    <audio id="backgroundMusic" loop>
+      <source src="your-audio-file.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <p>Dear Tarik vhi,</p>
+    <p>On this special day, I wish you a year filled with joy, success, and all the things you love.</p>
+    <p>May your journey ahead be as radiant as your smile today.</p>
+    <p>dua korar address ta whatsapp kore dio.</p>
+    <p>Happy Birthday! 🎉</p>
+    <p>With warm wishes,</p>
+    <p>Sohel & Hasib </p>
+  </div>
+
+  <script>
+    function showBirthdayMessage() {
+      document.getElementById('birthdayMessage').style.display = 'block';
+      
+      // Play background music
+      var backgroundMusic = document.getElementById('backgroundMusic');
+      backgroundMusic.play();
+    }
+  </script>
+</body>
+</html>

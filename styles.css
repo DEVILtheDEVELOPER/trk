@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom right, #3494e6, #ec6ead); /* Gradient background */
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Adjusted to space-between */
+  overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+button {
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 10px; /* Adjusted margin to 10px */
+  cursor: pointer;
+  background-color: #FF5733; /* Set your button background color */
+  color: #fff; /* Set your button text color */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1); /* Increase the scale on hover */
+  background-color: #FF8C5A; /* Set a different color on hover */
+}
+
+#birthdayMessage {
+  display: none;
+  animation: fadeIn 2s ease-in-out; /* Removed bounce effect */
+  background: linear-gradient(to bottom right, #e45858, #5e83a2); /* Gradient background for the message */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+#birthdayMessage h1 {
+  color: #fff; /* Set the font color to white */
+  animation: slideIn 2s ease-in-out;
+  margin-top: 0; /* Ensure top margin is set to 0 */
+}
+
+img {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 5px solid #fff; /* Add a white border to the image */
+  animation: rotateIn 16s linear infinite; /* Updated to slower circular motion */
+}
+
+p {
+  color: #fff; /* Set the font color to white */
+  font-size: 18px;
+  margin-top: 20px;
+  white-space: normal; /* Allow text to wrap */
+  overflow: visible; /* Show overflowing text */
+  animation: typeWriter 4s steps(40) 1s forwards; /* Writing animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Adjusted initial translateY value */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes typeWriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
